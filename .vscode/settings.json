@@ -1,0 +1,5 @@
+{
+    "code-runner.clearPreviousOutput": true,
+    "editor.tabCompletion": "on",
+    "diffEditor.codeLens": true
+}
