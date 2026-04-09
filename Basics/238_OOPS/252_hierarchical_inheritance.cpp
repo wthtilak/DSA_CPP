@@ -3,57 +3,34 @@
 #define endl '\n'
 using namespace std;
 
-
-class Animal{
+class Animal {
 public:
-    void eat(){
-        cout<<"eats\n";
-    }
+  void eat() { cout << "eats\n"; }
 
-    void breathe()
-    {
-        cout<< "breathes\n";
-    }
+  void breathe() { cout << "breathes\n"; }
 };
 
-class Bird : public Animal{
+class Bird : public Animal {
 public:
-    void fly()
-    {
-        cout<<"Flies\n";
-    }
-
+  void fly() { cout << "Flies\n"; }
 };
 
-class Fish : public Animal{
+class Fish : public Animal {
 public:
-    void swim()
-    {
-        cout<<"Swims\n";
-    }
-
+  void swim() { cout << "Swims\n"; }
 };
-class mammal : public Animal{
+class mammal : public Animal {
 public:
-    void walk()
-    {
-        cout<<"walks\n";
-    }
-
+  void walk() { cout << "walks\n"; }
 };
 
+int main() {
 
-int main()
-{
+  mammal m1;
+  m1.eat();
+  m1.breathe();
 
+  m1.walk();
 
-    mammal m1;
-    m1.eat();
-    m1.breathe();
-
-    m1.walk();
-    
-
-
-    return 0;
+  return 0;
 }
