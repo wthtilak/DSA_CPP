@@ -1,7 +1,8 @@
 #include <iostream>
-#include <string>
 #define endl '\n'
 using namespace std;
+
+//hierarchical inheritance --> means single parent having multiple childs
 
 class Animal {
 public:
