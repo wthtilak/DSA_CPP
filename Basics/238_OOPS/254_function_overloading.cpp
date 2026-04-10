@@ -2,6 +2,9 @@
 #include <string>
 using namespace std;
 
+// function overloading is basically just having 2 or more functions with same name but with different parameters
+//The example is shown below...
+
 class Print {
 public:
     void show(int x)
