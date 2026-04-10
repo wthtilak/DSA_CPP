@@ -1,8 +1,10 @@
 #include <iostream>
 #define endl '\n'
 using namespace std;
+// fast exponentiation is way of calculating the exponents faster with 
+// Big O(log n) time complexity, with bits.
 
-namespace {
+namespace { // new modern way of making static variable
 int ans = 1;
 }
 
