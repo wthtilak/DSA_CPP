@@ -13,4 +13,6 @@ public:
                // types of shapes therefore -->> pure virtual function
 };
 
-int main() { return 0; }
+int main() { 
+    cout<<endl;    
+    return 0; }
