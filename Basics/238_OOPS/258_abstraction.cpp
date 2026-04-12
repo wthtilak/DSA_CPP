@@ -2,7 +2,7 @@
 #define endl '\n'
 using namespace std;
 
-// Abstraction --->> Hiding all unnceccary details & showing only 
+// Abstraction --->> Hiding all unnceccary details & showing only
 // the important parts.
 // abstract class doesn't create an object & must have a pure virtual function
 
@@ -13,6 +13,7 @@ public:
                // types of shapes therefore -->> pure virtual function
 };
 
-int main() { 
-    cout<<endl;    
-    return 0; }
+int main() {
+  cout << endl;
+  return 0;
+}
