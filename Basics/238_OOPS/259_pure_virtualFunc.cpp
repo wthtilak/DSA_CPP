@@ -2,6 +2,9 @@
 #define endl '\n'
 using namespace std;
 
+//virtual function is a virtual function with no definition/logic
+//It is declared by assigning 0 at the time of declaration.
+
 // abstract class
 class Shape {
 public:
