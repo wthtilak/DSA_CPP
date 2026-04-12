@@ -8,7 +8,7 @@ using namespace std;
 
 class Shape {
 public:
-  void draw(); // pure virtual function , cuz we dont know which type of shape
+  void draw(); // we dont know which type of shape
                // to draw there are various
                // types of shapes therefore -->> pure virtual function
 };
