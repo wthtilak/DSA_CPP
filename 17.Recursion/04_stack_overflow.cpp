@@ -10,5 +10,7 @@ void func()
 int main()
 {
     func(); // segmentation fault
+    // to avoid this in your codebase
+    //always add base cases (smallest problem solution)
     return 0;
 }
