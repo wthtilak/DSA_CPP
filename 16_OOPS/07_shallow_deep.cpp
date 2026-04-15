@@ -14,7 +14,7 @@ public:
     this->name = name;
     this->color = color;
     mileage = new int;
-    *mileage = 12;
+    *mileage = 12;  
   }
 
   // making custom constructor
