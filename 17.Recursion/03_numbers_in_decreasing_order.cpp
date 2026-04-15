@@ -22,7 +22,7 @@ int main() {
 
   // using recursion
   int ans = num_decreasing(5);
-  cout << ans << " ";
+  cout << ans;
 
   //  print(5); //5 4 3 2 1
 
