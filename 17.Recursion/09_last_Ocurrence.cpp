@@ -3,7 +3,7 @@
 #define endl '\n'
 using namespace std;
 
-int lastOccur(vector<int> arr, int i, int target) {
+int lastOccur(const vector<int> &arr, int i, int target) { // passed the actual vector array by reference
   if (i == arr.size())
     return -1;
 
