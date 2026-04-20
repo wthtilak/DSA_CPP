@@ -4,7 +4,7 @@
 using namespace std;
 
 // with using index i
-void removeDp(string str, string ans, int i, int map[26]) {
+void removeDuplicates(string str, string ans, int i, int map[26]) {
 
   if (i == str.size()) {
     cout << ans << " " << endl;
@@ -12,11 +12,12 @@ void removeDp(string str, string ans, int i, int map[26]) {
   }
 
   int mapIdx = (int)(str[i] - 'a');
-  if (map[mapIdx]) {
-    removeDp(str, ans, i + 1, map);
-  } else {
+
+  if (map[mapIdx]) { // duplicate string
+    removeDuplicates(str, ans, i + 1, map);
+  } else { // non duplicate string
     map[mapIdx] = true;
-    removeDp(str, ans + str[i], i + 1, map);
+    removeDuplicates(str, ans + str[i], i + 1, map);
   }
 }
 
@@ -46,8 +47,8 @@ int main() {
   string str = "appnnacollege";
   string ans = "";
   int map[26] = {false};
-  
-  removeDp(str, ans, 0, map); // apncoleg
+
+  removeDuplicates(str, ans, 0, map); // apncoleg
 
   //   removeDuplicates(str, ans, map); // pnacolge
   return 0;
