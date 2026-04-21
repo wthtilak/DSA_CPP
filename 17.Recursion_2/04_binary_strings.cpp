@@ -3,6 +3,8 @@
 #define endl '\n'
 using namespace std;
 
+//Print all binary strings of size N without any consecutive 1s.
+
 // with lastPlace variable
 void binStrings(int n, int lastPlace, string ans) {
   if (n == 0) {
@@ -35,7 +37,7 @@ int main() {
 
   string ans = "";
   // binStrings(3, 0, ans);
-  
+
   binStrings(3, ans);
   return 0;
 }
