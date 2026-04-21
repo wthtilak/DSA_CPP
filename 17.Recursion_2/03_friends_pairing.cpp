@@ -2,6 +2,9 @@
 #define endl '\n'
 using namespace std;
 
+// Find total ways in which N friends can be paired up .
+// Each friend can only be paired once. 
+
 int friendsPairing(int n) {
   if (n == 1 || n == 2)
     return n;
