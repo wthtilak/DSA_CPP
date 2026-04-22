@@ -3,6 +3,9 @@
 #define endl '\n'
 using namespace std;
 
+// Time: O(n log n) (always)
+// Space: O(n) (extra vector used)
+
 void merge(int arr[], int si, int mid, int ei) {
   vector<int> temp;
   int i = si;
