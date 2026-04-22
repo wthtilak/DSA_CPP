@@ -5,6 +5,7 @@ using namespace std;
 
 // Time: O(n log n) (always)
 // Space: O(n) (extra vector used)
+// Here after : si -> starting index & ei -> ending index.
 
 void merge(int arr[], int si, int mid, int ei) {
   vector<int> temp;
@@ -63,7 +64,7 @@ int main() {
   mergeSort(arr, 0, n - 1);
   cout<<"Array After:"<<endl;
 
-  printArray(arr, n);
+  printArray(arr, n); // 2 3 4 5 6 7
 
   return 0;
 }
