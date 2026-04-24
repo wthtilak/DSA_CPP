@@ -9,7 +9,7 @@ using namespace std;
 // Sample Input 1 : arr = { "sun", "earth", "mars", "mercury" }
 // Sample Output 1 : arr = { "earth", "mars", "mercury", "sun"}
 
-void printArray(vector<string> arr, int n) {
+void printArray(vector<string> &arr, int n) {
   for (auto i : arr) {
     cout << i << " ";
   }
