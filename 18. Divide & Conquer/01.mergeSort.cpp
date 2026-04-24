@@ -39,7 +39,7 @@ void mergeSort(int arr[], int si, int ei) {
   if (si >= ei)
     return;
 
-  int mid = (si + ei) / 2;
+  int mid = si+ (ei-si) / 2; // optimised mid
 
   mergeSort(arr, si, mid);     // left subarray
   mergeSort(arr, mid + 1, ei); // right subarray
