@@ -2,7 +2,7 @@
 #define endl '\n'
 using namespace std;
 
-// Time: O(nlogn)
+// Time: O(logn)
 // Here after : si -> starting index & ei -> ending index.
 
 // Input : Rotated, Sorted Array with distinct nums; ascending order
