@@ -9,7 +9,7 @@ using namespace std;
 // Sample Input 1 : arr = { "sun", "earth", "mars", "mercury" }
 // Sample Output 1 : arr = { "earth", "mars", "mercury", "sun"}
 
-void printArray(vector<string> &arr, int n) {
+void printArray(const vector<string> &arr, int n) { // used const here for fast reading + cannot modify original.
   for (auto i : arr) {
     cout << i << " ";
   }
@@ -44,7 +44,7 @@ void merge(vector<string> &arr, int si, int mid, int ei) {
   }
 }
 
-void mergeSort(vector<string> &arr, int si, int ei) {
+void mergeSort(vector<string> &arr, int si, int ei) {// use & when passing vector string or arrays for faster access.
   if (si >= ei)
     return;
 
