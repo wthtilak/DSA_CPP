@@ -11,11 +11,11 @@
 using namespace std;
 
 class Person {
-
-public:
+protected:
   string name;
   int age;
 
+public:
   Person(string name, int age) {
     this->name = name;
     this->age = age;
@@ -23,22 +23,24 @@ public:
 };
 
 class Student : public Person {
+private:
+  string studentID;
 
 public:
-  Student(string name, int age) : Person(name, age) {
-    this->name = name;
-    this->age = age;
+  Student(string name, int age, string studentID) : Person(name, age) {
+    this->studentID = studentID;
   }
 
   void displayStudentInfo() {
-    cout << "Name :" << name << endl;
-    cout << "Age :" << age << endl;
+    cout << "Student ID:" << this->studentID << endl;
+    cout << "Name :" << this->name << endl;
+    cout << "Age :" << this->age << endl;
   }
 };
 
 int main() {
 
-  Student S1("Reacher", 22);
+  Student S1("Reacher", 22, "S123");
   S1.displayStudentInfo();
 
   return 0;
