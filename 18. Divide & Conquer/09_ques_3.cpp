@@ -22,8 +22,8 @@
 #define endl '\n'
 using namespace std;
 
-// Total time complexity : O(n²)
-// Space complexity : O(1)
+// Total time complexity : O(nlogn)
+// Space complexity : O(n)
 
 int InvCount =0; 
 void printArray(vector<int> &arr, int n) {
