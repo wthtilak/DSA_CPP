@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #define endl '\n'
 using namespace std;
 
@@ -6,15 +7,14 @@ using namespace std;
 // Space: O(1)
 // Here after : si -> starting index & ei -> ending index.
 
-void printArray(int arr[], int n) {
+void printArray(vector<int> &arr, int n) {
 
-  for (int i = 0; i < n; i++) {
-    cout << arr[i] << " ";
+  for (auto i : arr) {
+    cout << i << " ";
   }
   cout << endl;
 }
-
-int partition(int arr[], int si, int ei) {
+int partition(vector<int> &arr, int si, int ei) {
 
   int i = si - 1;
   int pivot = arr[ei];
@@ -32,7 +32,7 @@ int partition(int arr[], int si, int ei) {
   return i;
 }
 
-void quickSort(int arr[], int si, int ei) {
+void quickSort(vector<int> &arr, int si, int ei) {
   if (si >= ei) {
     return;
   }
@@ -44,8 +44,8 @@ void quickSort(int arr[], int si, int ei) {
 }
 
 int main() {
-  int arr[6] = {6, 3, 7, 5, 2, 4};
-  int n = 6;
+  vector<int> arr = {6, 3, 7, 5, 2, 4};
+  int n = arr.size();
 
   printArray(arr, n); // 6 3 7 5 2 4
 
